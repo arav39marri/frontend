@@ -13,6 +13,7 @@ const DisplayHome = () => {
     
        <div className='my-5  absolute  top-[14%] lg:left-[25%] font-bold text-2l lg:w-[70%] w-full h-[80%]'>
          <div className='h-[85%]  overflow-auto'>
+            
             <p className='font-bold text-lg text-white p-2 mt-2 ml-3'>Feature items</p>
             <div className='flex overflow-auto '>
             {albumsData.map((item, index) =>(<Albumitem key={index} name={item.name} 
