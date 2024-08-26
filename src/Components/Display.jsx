@@ -1,11 +1,14 @@
 import React from 'react'
+import { Route } from 'react-router-dom'
+import DisplayHome from './DisplayHome'
+import { Route,Routes } from 'react-router-dom'
 
-const Display = (props) => {
- 
+const Display = () => {
   return (
-    <div className=" sm:w-[162px] sm:h-[200px]  w-[100px] h-[150px] border border-blue-300 rounded-sm     ">
-       <p>{props.title}</p>
-       <p>{props.singer}</p>
+    <div className='w-[100%] m-2 px-6 pt-4 rounded bg-[#121212] text-white overflow-auto lg:w-[75%] '>
+        <Routes>
+            <Route path='/' element={<DisplayHome/>} />
+        </Routes>
     </div>
   )
 }

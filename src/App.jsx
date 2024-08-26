@@ -1,15 +1,18 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidebar";
-import Body1 from './Components/Body1'
+import Player from "./Components/Player";
+import DisplayHome from "./Components/DisplayHome";
 const App = () => {
   
 
   return (                                                  
-    <div className="top-0 right-0 ">
-    <Navbar/>
-    <Sidebar/>
-    <Body1/>
+    <div className="h-screen bg-black">
+      <div className="h-[90%] flex ">
+        <Sidebar/>
+        <DisplayHome/>
+      </div>
+        
+       <Player/>
     </div>
   );
 };
